@@ -1,10 +1,27 @@
 
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
 
 <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
 <input type=hidden name="orgid" value="00D4W000000FQXa">
-<input type=hidden name="retURL" value="http://">
+<input type=hidden name="retURL" value="https://lavalthankyoupage.herokuapp.com/">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail" value="mdiallo@azurgroup.ca">    -->
+<!--  ----------------------------------------------------------------------  -->
 
 <label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
 
@@ -12,13 +29,11 @@
 
 <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
 
+Adresse:<textarea  id="00N4W000007FWWe" name="00N4W000007FWWe" type="text" wrap="soft"></textarea><br>
+
 <label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
 
 <label for="description">Description</label><textarea name="description"></textarea><br>
-
-Date de début:<span class="dateInput"><input  id="00N4W00000DleHl" name="00N4W00000DleHl" size="20" type="text" /></span><br>
-
-Date de fin:<span class="dateInput"><input  id="00N4W00000DleIA" name="00N4W00000DleIA" size="20" type="text" /></span><br>
 
 Product:<select  id="00N4W000008NEMz" name="00N4W000008NEMz" title="Product"><option value="">--None--</option><option value="GC1040">GC1040</option>
 <option value="GC1060">GC1060</option>
@@ -31,8 +46,13 @@ Product:<select  id="00N4W000008NEMz" name="00N4W000008NEMz" title="Product"><op
 <option value="GC1020">GC1020</option>
 </select><br>
 
+Date de début:<span class="dateInput"><input  id="00N4W00000DleHl" name="00N4W00000DleHl" size="20" type="text" /></span><br>
+
+Date de fin:<span class="dateInput"><input  id="00N4W00000DleIA" name="00N4W00000DleIA" size="20" type="text" /></span><br>
+
 <input type="hidden"  id="external" name="external" value="1" /><br>
 
 <input type="submit" name="submit">
 
 </form>
+
